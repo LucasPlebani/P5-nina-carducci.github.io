@@ -61,9 +61,10 @@
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
-    $(".gallery").on("click", ".mg-next", () =>
+    $(".gallery").on("click", ".mg-next", ( ) =>
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
+    
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
@@ -124,6 +125,7 @@
       $("img.gallery-item").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
+       
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
@@ -154,9 +156,11 @@
         }
       });
       next =
-        imagesCollection[index] ||
+        imagesCollection[index -1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
+
+      
     },
     nextImage() {
       let activeImage = null;
@@ -192,7 +196,7 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      next = imagesCollection[index +1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
@@ -240,7 +244,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
+
 
       var tag = $(this).data("images-toggle");
 
