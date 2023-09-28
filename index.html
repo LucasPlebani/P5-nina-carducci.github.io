@@ -27,7 +27,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" aria-label="Button for instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+			<li><a class="social-link" aria-label="Button for instagram" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" width="40" height="21" alt=""></a></li>
 		</ul>
 	</div>
 </div>
@@ -91,10 +91,12 @@
 <article>
 <div id="about">
 	<div class="picture left">
-		<img data-src="./assets/images/nina.webp"
+		<picture>
+		<img data-src="./assets/images/nina.webp" width="375" height="375" alt="portrait de Nina Carducci, avec un léger sourir, avec une forêt en arrière plan"
 		srcset="./assets/images/nina_400PX.webp 400w,
 		./assets/images/nina_300PX.webp 300w"
 		 class="lazyload" alt="ninacarducci">
+		</picture>
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -254,21 +256,21 @@
 				<input type="submit" value="Envoyer" aria-label="Envoyer"/>
 			</form>
 		</div>
-</section>			
+		
 	
 	</main>
 		
 	<div class="picture right">
-		<img data-src="./assets/images/camera.webp" 
+		<img data-src="./assets/images/camera.webp" width="548" height="548"
 			 srcset="./assets/images/camera_500px.webp 500w, 
 					 ./assets/images/camera_1440px.webp 1440w"
-			 sizes="(max-width: 1000px) 100vw, 1440px"
+			 
 			 class="lazyload"
-			 alt="camera">
+			 alt="Appareil photo avec un fond noir ">
 	</div>
-	
+		</section>
 	</div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous" defer></script>
 </body>
 </html>
