@@ -6,10 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.d-block .w-100{ 
-    width: auto;
-    height: auto;
-}
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -267,7 +264,6 @@ input[type="submit"] {
 		width: 100%;
 		height: auto;
 	}
-	
 }
 
 @media all and (max-width: 1000px) {
@@ -331,7 +327,6 @@ input[type="submit"] {
 		width: 100%;
 		height: auto;
 	}
-	
 }
 
 @media all and (max-width: 650px) {
@@ -370,5 +365,4 @@ input[type="submit"] {
 	.picture img {
 		width: 100%;
 		height: auto;
-	}
-}
+	}}
