@@ -263,8 +263,7 @@ input[type="submit"] {
 	.picture img {
 		width: 100%;
 		height: auto;
-	}
-}
+	}}
 
 @media all and (max-width: 1000px) {
 	#about{
@@ -326,8 +325,7 @@ input[type="submit"] {
 	.picture img {
 		width: 100%;
 		height: auto;
-	}
-}
+	}}
 
 @media all and (max-width: 650px) {
 	.top-header {
